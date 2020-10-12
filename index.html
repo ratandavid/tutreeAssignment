@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tutree</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <!--
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/customjavascript.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-md">
+    <img id="tutree" src="http://tutree.com/assets/img/brand.svg"/>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Find Job</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Create Your Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recommendation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li>
+      </ul>
+    </div>  
+  </nav>
+</div>
+
+<div class="container-fluid Findingjobs">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12">
+                <p><b>Jobs and Vacancies</b></p>
+            </div>
+            <form class="form-inline col-xs-12 myform" action="" method="POST">
+                <div class="form-group search" >
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+                          <div class="input-group-text " style="background-color: #FEE4EB; border-style: none;">
+                            <i style="color:#FF0047;"class="fa fa-search"></i>
+                          </div>
+                        </span>
+                        <input class="form-control py-2 px-4 border-left-0  search" type="search" style="background-color: #FEE4EB; color:#FF0047; border-style: none;" placeholder="Search" id="example-search-input" />
+                      </div>
+                    </div>     
+                    <div class="form-group location ml-1">
+                        <div class="input-group">
+                            <span class="input-group-prepend">
+                                <div class="input-group-text " style="background-color: #FEE4EB; border-style: none;">
+                                    <i style="color:#FF0047;" class="fas fa-location-arrow"></i>
+                                </div>
+                            </span>
+                            <input class="form-control py-2 px-4 border-left-0 location" type="location" style="background-color: #FEE4EB; color:#FF0047; border-style: none;" placeholder="Location" id="example-location-input" />    
+                        </div>         
+                    </div>
+                    <div class="form-group findjob mr-sm-2 ">
+                        <button type="submit" class="btn ml-2 primary-btn">Find Jobs</button>
+                    </div>
+            </form>
+            
+        </div>    
+    </div>    
+</div>
+
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      
+        <div class="col-sm-3 col-xs-3" style="margin-top: 2%;">
+          <div class="card-group">
+          <div class="card">
+            <div class="card-header text-center"  style="background-color: #FF0047; color:white;" >
+              Filter
+            </div>  
+            <div class="card-body">
+              <div>
+                <div class="accordion" id="accordion-filter-dateposted">
+                  <div class="card" style="border-style:double; ">
+                    <div class="card-header py-1" style=" background-color:white ;" id="DatePosted">
+                      
+                      <div class="card-title">
+                        <a class="btn btn-link btn-block text-left" style="color: #FF0047;" type="button" onclick="iconChanger('dateposted-i')" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          <b>Date Posted</b>
+                          <i id="dateposted-i" class="fas fa-plus float-right "></i> 
+                        </a>
+                      </div>
+                    </div>  
+                    <div id="collapseOne" class="collapse py-0" aria-labelledby="DatePosted" data-parent="#accordion-filter-dateposted">
+                      <div class="card-body">
+                        <input type="radio" name="Date Posted" ><span class="ml-2">24 hours</span><br>
+                        <input type="radio" name="Date Posted" ><span class="ml-2">5 days</span><br>
+                        <input type="radio" name="Date Posted" ><span class="ml-2">7 days</span><br>
+                        <input type="radio" name="Date Posted" ><span class="ml-2">24 days</span><br>
+                        <input type="radio" name="Date Posted" ><span class="ml-2">30 days</span><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion" id="accordion-filter-jobtype">
+
+                  <div class="card" style="border-style:double; ">
+                    <div class="card-header py-1" style=" background-color:white ;" id="JobType">
+                      
+                      <div class="card-title">
+                        <a class="btn btn-link btn-block text-left" style="color: #FF0047;" type="button" onclick="iconChanger('jobtype-i')" data-toggle="collapse" data-target="#collapsejob" aria-expanded="false" aria-controls="collapsejob">
+                          <b>Job Type</b>
+                          <i id="jobtype-i" class="fas fa-plus float-right "></i> 
+                        </a>
+                      </div>
+                    </div>  
+                    <div id="collapsejob" class="collapse py-0" aria-labelledby="JobType" data-parent="#accordion-filter-jobtype">
+                      <div class="card-body">
+                        <input type="checkbox" name="Date Posted" ><span class="ml-2">All</span><br>
+                        <input type="checkbox" name="Date Posted" ><span class="ml-2">Full-Time</span><br>
+                        <input type="checkbox" name="Date Posted" ><span class="ml-2">Part-Time</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="accordion" id="accordion-filter-categories">
+
+                  <div class="card" style="border-style:double; ">
+                    <div class="card-header py-1" style=" background-color:white ;" id="categories">
+                      
+                      <div class="card-title">
+                        <a class="btn btn-link btn-block text-left" style="color: #FF0047;" type="button" onclick="iconChanger('categories-i')" data-toggle="collapse" data-target="#collapsecategories" aria-expanded="false" aria-controls="collapsecategories">
+                          <b>Categories</b>
+                          <i id="categories-i" class="fas fa-plus float-right "></i> 
+                        </a>
+                      </div>
+                    </div>  
+                    <div id="collapsecategories" class="collapse py-0" aria-labelledby="categories" data-parent="#accordion-filter-categories">
+                      <div class="card-body">
+                        <input type="radio" name="Date Posted" ><span class="ml-2">24 hours</span><br>
+                        <input type="radio" name="Date Posted" ><span class="ml-2">5 days</span><br>
+                        <input type="radio" name="Date Posted" ><span class="ml-2">7 days</span><br>
+                        <input type="radio" name="Date Posted" ><span class="ml-2">24 days</span><br>
+                        <input type="radio" name="Date Posted" ><span class="ml-2">30 days</span><br>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>  
+          </div>  
+        </div>
+        </div>   
+      </div>
+
+      
+      <div class="col-sm-9 col-xs-9 " style="margin-top: 2%; border-radius:12px; ">
+        <div class="row">
+          <div class="container innernavigation">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Sort By:</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#Relavances">Relavances</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#Date">Date</a>
+              </li>
+            </ul>
+          
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="Relavances" class="container tab-pane active"><br>
+              <div class="row job-container">
+                <div class="col-sm-6 col-xs-6">
+                  <h3>Sr. Software Developer</h3>
+                </div>  
+                <div class="col-sm-6">
+                  <img class="container-job-logo" src="http://tutree.com/assets/img/brand.svg"/>
+                </div>
+                <div class="col-sm-12 col-xs-12" style="margin-top:2%;">
+                  <ul class="nav job-attr" role="tablist">
+                    <li class="nav-item">
+                      Post Global
+                    </li>
+                    <li class="nav-item">
+                      Location
+                    </li>
+                    <li class="nav-item">
+                      Full time employe
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <p>
+                    Senior Software Engineer will develop information systems by studying
+                    operations; designing, developing and installing software 
+                    solutions; support and develop software team. The Senior 
+                    Software Engineer will lead a team of developers responsible 
+                    for building new and support existing websites.
+                  </p>  
+                </div> 
+              </div><hr>
+              <div class="row job-container">
+                <div class="col-sm-6 col-xs-6">
+                  <h3>Sr. Software Developer</h3>
+                </div>  
+                <div class="col-sm-6">
+                  <img class="container-job-logo" src="http://tutree.com/assets/img/brand.svg"/>
+                </div>
+                <div class="col-sm-12 col-xs-12" style="margin-top:2%;">
+                  <ul class="nav job-attr" role="tablist">
+                    <li class="nav-item">
+                      Post Global
+                    </li>
+                    <li class="nav-item">
+                      Location
+                    </li>
+                    <li class="nav-item">
+                      Full time employe
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <p>
+                    Senior Software Engineer will develop information systems by studying
+                    operations; designing, developing and installing software 
+                    solutions; support and develop software team. The Senior 
+                    Software Engineer will lead a team of developers responsible 
+                    for building new and support existing websites.
+                  </p>  
+                </div> 
+              </div>
+              </div>
+              
+              
+            </div>
+            
+        </div> 
+      </div>  
+    </div> 
+</div>
+
+
+<div>
+  <button type="button" class="btn btn-primary float-button"  data-toggle="modal" data-target="#exampleModal">
+    <i class="fas fa-comments"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img id="modal-logo" src="http://tutree.com/assets/img/brand.svg"/>
+          <button type="button" class="close"  data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class=" col-xs-12" action="" method="POST" style="display:flex-block">
+            <p>What type of feedback would you like to leave for us?</p>
+            <div class="btn-group-vertical">
+            <button type="button" class="btn primary-btn" style="margin-top:1%;">Suggestions or general feedback</button>
+            <button type="button" class="btn primary-btn" style="margin-top:1%;">Bug or site issues</button>
+            <button type="button" class="btn primary-btn" style="margin-top:1%;">Questions</button>
+            </div>
+          </form> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn primary-btn">>></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+</body>
+</html>

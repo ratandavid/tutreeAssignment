@@ -1,0 +1,140 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.nav{
+    padding:5px 0;
+}
+.nav li a{
+    color: #000000;
+}
+.nav li a:hover{
+    color:#FF0047;
+
+
+}
+#tutree{
+    width: 14%;
+}
+.nav{
+    margin-left:10%;
+}
+
+.Findingjobs{
+    background-color:white;
+}
+.Findingjobs p{
+    color:red;
+    padding:15px 0 0 20%;
+}
+.myform{
+    padding-left:20%;
+  
+}
+.form-control::placeholder{
+    color:red!important;
+}
+.form-control:focus {
+    border-color: red!important;
+    box-shadow: 0 0 0 0!important;
+} 
+.innernavigation ul{
+    margin-left: 0%;
+}
+.primary-btn{
+    background-color:#FF0047; 
+    color:white;
+    border-style: none;
+}
+.container-job-logo{
+    width:40%;
+    float:right;
+}
+#modal-logo{
+    width:50%;
+}
+.float-button{
+    border-radius:100%!important;
+    position: fixed; 
+    border-style:none!important;
+    width:60px; 
+    background-color:#FF0047!important; 
+    height:60px; 
+    bottom:40px; 
+    right:40px;
+}
+#headingOne{
+    text-align: center!important;
+}
+
+.job-container ul li {
+    background-color: #FEE4EB;
+    margin-right:10px;
+    color:#FF0047;
+    padding:5px;
+    border-radius: 10%;
+
+}
+
+
+@media (max-width:475px){
+    #tutree{
+        width: 30%;
+    }
+    .nav-item :hover{
+        background-color:#FF0047;
+       
+    }
+
+    .nav li a:hover{
+        color:#fff;
+       
+    }
+    .modal-fade{
+        width:50%!important;
+    }
+    
+    .nav{
+        display:block!important;
+        margin:0;
+    }
+    .form-control{
+        width:110px!important;
+        position:relative!important;
+        right:10px!important;
+    }
+    .myform{
+        padding-left:5%!important;
+    }
+    .search{
+        margin:0 auto!important;
+    }
+    .location{
+        margin:0 auto!important;
+    }
+    .findjob{
+        margin-top:10px!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    .job-container h3{
+        font-size: 15px!important;
+        position: absolute!important;
+    }
+    .job-container img{
+        position: relative!important;
+        width: 85px!important;
+    } 
+    .job-attr{
+        display: flex!important;
+    }
+    .job-attr li{
+        width: fit-content;
+        font-size: 12px;
+    }
+    .Findingjobs p{
+        padding-left: 7%!important;
+    }
+
+}
