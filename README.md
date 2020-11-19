@@ -1,2 +1,2 @@
 # tutreeAssignment
-!(https://github.com/ratandavid/tutreeAssignment/blob/main/ui_screenshots/Laptop%20Screen.png)
+![Laptop Screen](https://github.com/ratandavid/tutreeAssignment/blob/main/ui_screenshots/Laptop%20Screen.png)
